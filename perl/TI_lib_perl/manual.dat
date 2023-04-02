@@ -1,0 +1,113 @@
+FILE : TI_matkind.pm
+
+    $a->is_zero_matrix;
+
+    $a->is_c_identity_matrix;
+
+    $a->is_diagonal_matrix;
+
+    $a->is_hermitian_matrix;
+
+FILE : TI_montecarlo.pm
+
+    $x1 or ($x1, $x2) = TI_montecarlo->rand_gauss($ave, $sigma);
+
+    $x1 or ($x1, $x2) = TI_montecarlo->rand_gauss2($ave, $sigma);
+
+    ($av, $sd, $num) = TI_montecarlo->ave_sigma(@data);
+
+    ($eval, $numev, @par_low) = lsquare_simplex(10000, 1.0e-7, \&func, \@st_par, \@uni_par);
+
+    $cof_r = TI_montecarlo->linear_correlation(@data);
+
+FILE : TI_exponential.pm
+
+    $b = $a->exponential_operator;
+
+    $b = $a->exp_taylor_expansion;
+
+    $b = $a->exp_double_angle;
+
+FILE : TI_spinsys.pm
+
+    $sigma = $spin_sys->make_density_matrix(3*(4-2*i), "e e", 2, "x y");
+
+    $res = $spin_sys->evolve_density_matrix($sigma, $hamilt, $t);
+
+    @res = $spin_sys->sequential_evolution($sigma, $hamilt, $dt, $n);
+
+    $data = $spin_sys->sequential_detect($a_sigma, $obs, $n);
+
+    $data = $spin_sys->detect_save_ff($sigma, $hamil, $obs, $dt, $n, $file, $rg, $relax);
+
+    $spin_sys->product_operator_deconv($sigma);
+
+    $res = $spin_sys->rotate_density_matrix($sigma, "z e", $PI/2);
+
+FILE : TI_matrix.pm
+
+    $a = new TI_matrix ([1, 0, 2-4*i, -$PI], [rand, 3+4, 4*2-5, 0]);
+
+    $c = $a->add($b);
+
+    $c = $a->subtract($b);
+
+    $c = $a->multiply($b);
+
+    $b = $a->scalar_multiply(3*(1+3*i));
+
+    $b = $a->hermitian_conjugate;
+
+    $c = $a->complex_conjugate;
+
+    $c = $a->transpose;
+
+    ($re, $im) = $a->trace;
+
+    $a->show_matrix("Any comment "); %.2f output.
+    $a->show_matrix("Any comment ", 4); %.4f output.
+
+    $c = $a->direct_product($b);
+
+    $d = $a->double_commutator($b, $c);
+
+    $c = $a->commutator($b);
+
+    $super_a = $a->commutator_superoperator;
+
+    $b = $a->copy_matrix;
+
+    $e = $a->make_identity_matrix;
+
+    $b = $a->mat_to_column_vector;
+
+    $b = $a->column_vector_to_mat(3, 4);
+
+    $norm = $a->infinity_norm;
+
+    ($re, $im) = $a->show_matrix_ele(3, 4);
+
+FILE : adiabatic.pl
+
+FILE : TI_relax.pm
+
+    $spin->cal_j_relax($sigma, $obs, 'dipolar_hetero', 'I S', 'dip', 'csa', 'I', 'cs');
+
+    $spin_sys->arrage_spin_lab('N H');
+
+    $spin_sys->expand_dens_mat_label("H N", "z x");
+
+FILE : TI_SIM.pm
+
+    $spin_sys = TI_SIM->new("I S T");
+
+FILE : TI_pulse.pm
+
+    $res = $spin_sys->apply_pulse($sigma, "I", $hamil, 2*$PI*3000, $PI/2, 10.0e-6);
+
+FILE : TI_vectmodel.pm
+
+    ($theta, $phi) = $spin_sys->vector_model_xyz($sigma, "x e", "y e", "z e");
+
+    ($reu, $imu, $re_norm, $im_norm) = $spin_sys->vector_projection($obs, $sigma);
+
