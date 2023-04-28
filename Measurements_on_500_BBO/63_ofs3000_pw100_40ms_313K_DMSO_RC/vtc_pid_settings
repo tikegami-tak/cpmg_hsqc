@@ -1,0 +1,10 @@
+VTC_REG_PID_SET_CH2=\
+<pid_settings type="probehead">
+   <standard_pid proportional="4.981" integral="40.980" differential="6.830" />
+   <temperature selftune="314.250" min="264.250" max="364.250" />
+   <vta type="2" sensor="1" connected_sensors="1" />
+   <gasflow selftune="450.000" min="400.000" max="500.000" />
+   <bcu_chiller type="1" selftune="1" min="0" max="1000" />
+   <pics checksum="" name=" CP TCI 500S2 H-C/N-D-05 Z" />
+   <checksum value="8CF97E16" />
+</pid_settings>
