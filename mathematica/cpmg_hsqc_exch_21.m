@@ -7,7 +7,7 @@
 (* bloch[2] simulation of 60-300-60 composite pulse against offset *)
 (* bloch[4] simulation of 60-300-60 composite pulse against delay *)
 
-hpi = 8;
+hpi = 6;
 (*
 	5, ST-CW-CPMG {y y x -x}
 	6, in-phase 2*cpmg(-Sy) - 180x - 2*cpmg(Sy) with 1H CW decoupling
@@ -157,7 +157,7 @@ Module[
 	phs = 0;
 	v1s = 0;
 	offi = 0;
-	offs = 0;
+	offs = 3500;
 
 	ix = 0;
 	iy = 0;
