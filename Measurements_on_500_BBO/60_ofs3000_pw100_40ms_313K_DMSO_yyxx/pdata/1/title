@@ -1,0 +1,9 @@
+CPMG-HSQC for methyl 13C spins at 313 K
+CW-1H-in-phase yyx-x version
+
+1M DMSO in d-DMSO (in Shigemi)
+
+Tcp=40ms, L8=NBL=18, CPMG freq max=800 Hz
+pL21 -> pL7 (100% power), cnst14= 3,000 Hz
+
+o1p is set at 2.5 ppm (almost on-resonance).
