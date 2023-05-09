@@ -1,12 +1,19 @@
 # cpmg_hsqc
 
-These programs simulate CPMG experiments for NMR.
+The programs simulate relaxation dispersion curves for NMR experiments.
 
-Both the Perl and Python programs simulate four kinds of relaxation dispersion curves. They are conventionally used relaxation-compensated CPMG method, the 1H-CW in-phase method, the yyx(-x) in-phase CPMG method, and a newly developed AFTAC-CPMG method described in the references (1, 2).
+The Perl and Python programs both simulate four kinds of relaxation dispersion curves. They are
 
-The Python program includes a function for fitting to those relaxation curve data.
+1)	the conventional relaxation compensated CPMG method,
+2)	the 1H-CW in-phase method with a pi pulse at the center of the CPMG period,
+3)	the 1H-CW in-phase method with pi pulse phases of {y, y, x, -x}
+4)	the newly developed AFTAC method.
 
-The Perl program also simulates similar relaxation-dispersion curves, but using the evolution of density matrices.
+The Python program also includes a function for fitting to relaxation-dispersion curve data that have been simulated or actually measured.
+
+The Mathematica program is the same as the python one, but has no function of fitting.
+
+The Perl program also simulates relaxation-dispersion curves, but implements no exchange phenomenon. Instead it can deal with SI, SI2, and SI3 spin systems.
 
 More details will be described soon.
 
