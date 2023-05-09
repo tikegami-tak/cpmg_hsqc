@@ -20,8 +20,8 @@ The program also includes a function for fitting to relaxation-dispersion curve 
 
 The input file (e.g. 1x.inp) looks like follows.
 
-# comment
-# cpmg_frequency_(Hz)   R2eff_(/s)   uncertainty_(any_number)
+¥# comment
+¥# cpmg_frequency_(Hz)   R2eff_(/s)   uncertainty_(any_number)
 50.000000	94.018909	0.463558
 100.000000	44.571446	0.065021
 150.000000	25.978784	0.032330
