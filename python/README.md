@@ -43,6 +43,6 @@ The input file (e.g. 1x.inp) looks like follows.
 800.000000	4.536786	0.016834  
 
 Before fitting, do not forget to enter a number (5, 6, 7, 8) in hpi to indicate which CPMG method was used for the actual measurement.
-tex (the total CPMG period) and J-coupling constant and also important.
+tex (the total CPMG period) and J-coupling constant are also important.
 The parameters, pa, kex, R0, and Δω, are used as initial values during optimization.
 Offset, 90-degree pulse width, etc. are not used because optimization is performed assuming offset=0 and infinite pulse power.
