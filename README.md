@@ -5,7 +5,7 @@ The programs simulate relaxation dispersion curves for NMR experiments.
 The Perl and Python programs both simulate four kinds of relaxation dispersion curves. They are
 
 1)	the conventional relaxation compensated CPMG method,
-2)	the 1H-CW in-phase method with a pi pulse at the center of the CPMG period,
+2)	the 1H-CW in-phase method with a 90deg-phase-shifted pi pulse at the center of the CPMG period,
 3)	the 1H-CW in-phase method with pi pulse phases of {y, y, x, -x}
 4)	the newly developed AFTAC method.
 
